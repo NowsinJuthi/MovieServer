@@ -1,0 +1,18 @@
+/my-project
+  /client        ← React frontend
+  /server        ← Express backend
+
+cd client
+npx create-react-app .
+
+cd ../server
+npm init -y
+npm i express mongoose cors helmet hpp xss-clean express-rate-limit dotenv express-mongo-sanitize cookie-parser
+npm i -D nodemon
+mkdir -p src/{routes,controllers,services,models,middlewars,utils,config,}
+
+model->controller->service->model 
+
+"dev": "nodemon index.js",
+
+<script src="https://cdn.tailwindcss.com"></script>
