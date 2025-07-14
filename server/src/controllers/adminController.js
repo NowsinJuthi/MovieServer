@@ -36,39 +36,39 @@ export const verifyAdmin = async (req, res) => {
         res.status(500).json({ message: error.message })
     }
 }
-export const refreshAccessToken = (req, res) => {
+// export const refreshAccessToken = (req, res) => {
 
-    // try {
-    //     const token = req.cookie.refreshtoken;
+//     // try {
+//     //     const token = req.cookie.refreshtoken;
 
-    //     if (!token) return res.status(404).json({ message: "No refresh token found" })
+//     //     if (!token) return res.status(404).json({ message: "No refresh token found" })
 
-    //     const verified = ''
+//     //     const verified = ''
 
-    //     if (!verified) return res.status(403).json({ message: "Unauthorized token" })
+//     //     if (!verified) return res.status(403).json({ message: "Unauthorized token" })
 
-    //     const newAccessToken = ''
-    //     res.status(200).json({ message: "Access token refreshed" })
-    //         .cookie('accesstoken', newAccessToken, {
-    //             httpOnly: truq,
-    //             secure: true,
-    //             sameSite: "Strict",
-    //             maxAge: 10 * 60 * 1000
-    //         })
+//     //     const newAccessToken = ''
+//     //     res.status(200).json({ message: "Access token refreshed" })
+//     //         .cookie('accesstoken', newAccessToken, {
+//     //             httpOnly: truq,
+//     //             secure: true,
+//     //             sameSite: "Strict",
+//     //             maxAge: 10 * 60 * 1000
+//     //         })
 
 
-    // } catch (error) {
-    //     res.status(500).json({ message: error.message })
-    // }
-}
-export const logOutAdmin = async (req, res) => {
+//     // } catch (error) {
+//     //     res.status(500).json({ message: error.message })
+//     // }
+// }
+// export const logOutAdmin = async (req, res) => {
 
-    // try {
-    //     const [refreshtoken] = req.body
-    //     const result = await adminLogoutService(req.admin, refreshtoken)
-    //     return res.status(201).json(result)
+//     // try {
+//     //     const [refreshtoken] = req.body
+//     //     const result = await adminLogoutService(req.admin, refreshtoken)
+//     //     return res.status(201).json(result)
 
-    // } catch (error) {
-    //     res.status(500).json({ message: error.message })
-    // }
-}
+//     // } catch (error) {
+//     //     res.status(500).json({ message: error.message })
+//     // }
+// }

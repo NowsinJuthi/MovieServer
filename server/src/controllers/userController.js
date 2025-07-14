@@ -7,7 +7,7 @@ export const userCreate = async (req,res) => {
         await userModel.create(newUser)
 
         return res.status(201).json({
-            massage:"User created",
+            message:"User created",
             data:newUser,
         })
     } catch (error) {
